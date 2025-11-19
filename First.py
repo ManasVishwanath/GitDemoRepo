@@ -12,6 +12,7 @@ for char in inputString:
         k[char] = 1
 
 
-for i in k.values():
+res = sorted(k.items() , key= lambda x:x[1],reverse=True)[0][0]
+print(res)
 
 
