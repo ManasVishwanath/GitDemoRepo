@@ -1,6 +1,6 @@
 
 
-inputString = "sdjsiofewiohfdbvuehfsdbvdspS SHDJKDSF DFHJDFKS 83749HDFD "
+inputString = "sdjsiofewiohfdbvuehncuidhds98d9f8dyfhdsfldsk fjsajdksgjhdhsakjdsh dlksa djaslkdhask89djksds fsdbvdspS SHDJKDSF DFHJDFKS 83749HDFD "
 #gIVE ME CHARACTER WHICH IS COMING HIGHEST nO OF TIMES IN ABOVE STRING
 
 k = {}
@@ -11,7 +11,8 @@ for char in inputString:
     else:
         k[char] = 1
 
-
-for i in k.values():
+print(k)
+repeated = max(k, key = k.get)
+print(repeated, k[repeated])
 
 
