@@ -1,6 +1,6 @@
 
 
-inputString = "sdjsiofewiohfdbvuehncuidhds98d9f8dyfhdsfldsk fjsajdksgjhdhsakjdsh dlksa djaslkdhask89djksds fsdbvdspS SHDJKDSF DFHJDFKS 83749HDFD "
+inputString = "sdjsiofewiohfdbvuehfsdbvdspS SHDJKDSF DFHJDFKS 83749HDFD "
 #gIVE ME CHARACTER WHICH IS COMING HIGHEST nO OF TIMES IN ABOVE STRING
 
 k = {}
@@ -11,8 +11,8 @@ for char in inputString:
     else:
         k[char] = 1
 
-print(k)
-repeated = max(k, key = k.get)
-print(repeated, k[repeated])
+
+res = sorted(k.items() , key= lambda x:x[1],reverse=True)[0][0]
+print(res)
 
 
